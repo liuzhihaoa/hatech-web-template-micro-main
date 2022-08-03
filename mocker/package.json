@@ -1,0 +1,37 @@
+{
+  "name": "mocker",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "PORT=6666 node index.js ",
+    "hot": "nodemon index.js",
+    "build": "pkg . --targets node10 --out-path ./dist --debug"
+  },
+  "bin": "index.js",
+  "pkg": {
+    "assets": [
+      "./mocks/*.js"
+    ]
+  },
+  "keywords": [
+    "mockjs",
+    "node.js"
+  ],
+  "author": "wuhao",
+  "license": "ISC",
+  "dependencies": {
+    "http-proxy-middleware": "^1.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.0",
+    "koa-better-http-proxy": "^0.2.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-http-proxy-middleware": "^0.0.2",
+    "koa-router": "^9.0.1",
+    "koa2-connect": "^1.0.2",
+    "mockjs": "^1.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

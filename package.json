@@ -1,0 +1,75 @@
+{
+  "name": "hatech-web-template-project-micro-main",
+  "version": "0.0.1",
+  "private": true,
+  "description": "微前端主应用项目",
+  "scripts": {
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "test:coverage": "vue-cli-service test:unit --coverage",
+    "lint": "vue-cli-service lint",
+    "dev": "vue-cli-service serve"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "hatech-element-ui": "^2.15.3",
+    "hatech-qiankun": "0.0.1",
+    "hatech-web-component-breadcurmb": "0.0.2",
+    "hatech-web-component-icon": "^0.0.1",
+    "hatech-web-component-login": "0.0.2",
+    "hatech-web-component-screen": "0.0.4",
+    "hatech-web-core": "0.0.51",
+    "hatech-web-layout-husmc": "0.0.11",
+    "hatech-web-theme-darkblue": "0.0.20",
+    "hatech-web-theme-loader": "0.0.10",
+    "hatech-web-theme-white": "0.0.11",
+    "hatech-web-utils": "^0.1.1",
+    "nprogress": "^0.2.0",
+    "qiankun": "^2.3.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.10",
+    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-plugin-unit-jest": "^4.5.10",
+    "@vue/cli-service": "^3.11.0",
+    "@vue/test-utils": "^1.0.3",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-require-context-hook": "^1.0.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.3",
+    "svg-sprite-loader": "^5.0.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {},
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
